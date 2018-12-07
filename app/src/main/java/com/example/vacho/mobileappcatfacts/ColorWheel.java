@@ -13,9 +13,12 @@ public class ColorWheel {
             "#C4AF9A",
             "#CB04A5",
             "#E0CA3C",
-            "#F7BFB4",
-            "#FB9F89",
-            "#FFB86F"
+            "#ffdfba",
+            "#ffb3ba",
+            "#bae1ff",
+            "#8470ff",
+            "#98fb98",
+            "#5f9ea0"
     };
 
     int getColor() {
