@@ -2,6 +2,7 @@ package com.example.vacho.mobileappcatfacts;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,18 +19,31 @@ public class MainActivity extends AppCompatActivity {
     //Declare our view variables
     private TextView factTextView;
     private Button showFactButton;
-    private RelativeLayout relativeLayout;
+    private ConstraintLayout constraintLayout;
     private Button nextButton;
+    private TextView messageTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dog_facts);
 
+        String message = " ";
+        message = getIntent().getStringExtra("message_key");
+
         factTextView = findViewById(R.id.factTextView);
         showFactButton = findViewById(R.id.showFactButton);
-        relativeLayout = findViewById(R.id.relativeLayout);
+        constraintLayout = findViewById(R.id.relativeLayout);
         nextButton = findViewById(R.id.SwapActivityButton);
+        messageTextView = findViewById(R.id.MainFavoriteDog);
+
+        if (message == null) {
+            messageTextView.setText(" ");
+        }
+        else {
+            messageTextView.setText("Your Favorite Dog Is: " + message);
+        }
+
         final MediaPlayer dogBarkMP = MediaPlayer.create(this, R.raw.pitbull);
 
         View.OnClickListener listener = new View.OnClickListener() {
@@ -38,10 +52,11 @@ public class MainActivity extends AppCompatActivity {
                 String fact = factBook.getFact();
                 int color = colorWheel.getColor();
                 factTextView.setText(fact);
-                relativeLayout.setBackgroundColor(color);
+                constraintLayout.setBackgroundColor(color);
                 showFactButton.setTextColor(color);
                 nextButton.setTextColor(color);
                 dogBarkMP.start();
+
             }
         };
         showFactButton.setOnClickListener(listener);
