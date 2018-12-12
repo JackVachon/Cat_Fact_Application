@@ -21,6 +21,18 @@ class FactBook {
             "Petting a dog can lower your blood pressure.",
             "Over half of dog owners include their dogs in annual holiday photos.",
             "Puppies are blind, deaf and toothless when born.",
+            "Most dogs have fur",
+            "A pack of dogs is often composed of eight to ten members.",
+            "Dogs will poop facing the North-South magnetic axis",
+            "Boy Scouts and Girl Scouts can earn badges for dog care and pet care",
+            "Max, the world’s oldest dog, passed away at the ripe old age of 29 years and 282 days old in 2013.",
+            "Tripping over your dog is the second most likely way to get injured around hounds.",
+            "Dalmatian puppies are pure white when they are born and develop their spots as they grow older.",
+            "45% of dogs sleep in their owner’s bed",
+            "Dogs are not colorblind. They also see blue and yellow.",
+            "A person who hunts with a Beagle is known as a “Beagler.”",
+            "An African wolf dog known as the Basenji is the only dog in the world that cannot bark.",
+            "A group of pugs is called a \"grumble.\""
     };
 
     String getFact() {
