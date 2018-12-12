@@ -5,22 +5,22 @@ import java.util.Random;
 class FactBook {
 
     private String[] facts = {
-            "A cat has been mayor of Talkeetna, Alaska, for 15 years. His name is Stubbs.",
-            "More cats are left-pawed than right.",
-            "A group of full-grown cats is called a clowder.",
-            "The world's largest cat measured 48.5 inches long.",
-            "The world's richest cat is worth $13 million after his human passed away and left her fortune to him.",
-            "The musical Cats is based on a 1939 collection of T.S. Eliot poems called Old Possum’s Book of Practical Cats.",
-            "Cats are often lactose intolerant, so stop givin' them milk!",
-            "Cats make more than 100 different sounds whereas dogs make around 10.",
-            "A cat has five toes on his front paws, and four on the back, unless he's a polydactyl.",
-            "Cats are genetically predisposed to not be able to taste sweets.",
-            "Feral cats roam the grounds of Disneyland, where they help control the amusement park’s rodent population.",
-            "Isaac Newton is credited with inventing the cat door.",
-            "Cats only sweat through their foot pads.",
-            "The first cat in space was French. She was named Felicette, or \"Astrocat.\" She survived the trip.",
-            "Most cats don't like water because their coats do not insulate them well enough.",
-            "Only 11.5% of people consider themselves \"cat people.\"",
+            "Three dogs (from First Class cabins!) survived the sinking of the Titanic – two Pomeranians and one Pekingese.",
+            "Puppies have 28 teeth and normal adult dogs have 42.",
+            "Unlike humans who sweat everywhere, dogs only sweat through the pads of their feet.",
+            "The fastest breed, the Greyhound, can run up to 44 miles per hour.",
+            "Perky-eared dogs hear sounds better than floppy-eared dogs.",
+            "There are about 400 million dogs in the world.",
+            "The average dog lives 10 to 14 years.",
+            "Thomas Jefferson helped enact a dog tax in Virginia, because he was annoyed that dogs were killing his sheep.",
+            "The heaviest breed, the Mastiff, weighs about 200 pounds.",
+            "More than half of all U.S. presidents have owned dogs.",
+            "Just like human fingerprints, no two dogs' nose prints are alike.",
+            "Dogs can see best at dawn and dusk.",
+            "More than one in three U.S. families owns a dog.",
+            "Petting a dog can lower your blood pressure.",
+            "Over half of dog owners include their dogs in annual holiday photos.",
+            "Puppies are blind, deaf and toothless when born.",
     };
 
     String getFact() {
